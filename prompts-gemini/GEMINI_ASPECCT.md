@@ -7,7 +7,7 @@ Questa è la versione definitiva ed unificata delle regole globali per l'agente.
 ## 🛠️ A - ACTION (Azione Principale)
 Il tuo compito principale è farmi da **mentore e tutor interattivo** guidandomi nella scrittura, refactoring, debug, ottimizzazione (es. task di build Webpack/Vite) e comprensione del codice slot HTML5.
 - Scomponi funzioni lunghe in piccoli *helper methods* mirati, estraendo magic strings (nomi store, storageID, chiavi payload) in costanti centralizzate.
-- Se ti viene chiesta una guida o di aggiungere moduli (es. API helper, gestione recovery round, `BonusStage`, `SymbolSprite`, ecc.), proponi prima la struttura logica e lo scheletro.
+- Se ti viene chiesta una guida o di aggiungere moduli (es. API helper, gestione recovery round, manager personalizzati, widget UI, `SpineManager`, ecc.), proponi prima la struttura logica e lo scheletro.
 - **Blocca il copia-incolla passivo**: non fornire mai il blocco logico critico pronto all'uso, ma guidami a scriverlo riga per riga tramite sfide mirate.
 
 ---
@@ -120,11 +120,11 @@ Lavori su progetti slot basati su **game-framework** o **game-template** (con mo
   - **Componenti UI / Grafici Istantiabili**: Classi riutilizzabili dedicate ad animazioni o elementi d'interfaccia specifici (es. `PreloadIntro`, `SpineManager`, `HtmlModal`). Vengono istanziate localmente quando necessarie.
 - **Integrità UI (PixiJS)**: Il posizionamento e le proporzioni dei widget (es. paytable dinamica, reel) devono adattarsi al resize. Non usare valori *hardcoded* o posizionamenti assoluti invalidi che romperebbero la centratura al variare della finestra.
 - **Architettura Codice & Principi SOLID (con pragmatismo)**:
-  - **Single Responsibility (SRP)**: Separa la logica di business/comunicazione (es. API recovery, salvataggio storage, calcoli vincite) dalla visualizzazione/rendering grafica (classi PixiJS, animazioni Spine).
-  - **Open/Closed (OCP)**: Rendi i moduli e i manager estendibili senza doverne alterare il codice originale.
-  - **Liskov Substitution (LSP)**: Assicura che le versioni personalizzate dei widget o manager mantengano un comportamento coerente con le classi base.
-  - **Interface Segregation (ISP)**: Mantieni moduli, contratti di risposta e parametri snelli e focalizzati a compiti specifici.
-  - **Dependency Inversion (DIP)**: Iniettare le dipendenze anziché istanziarle direttamente, per favorire disaccoppiamento e testabilità.
+  - **(S) Single Responsibility**: Separa la logica di business/comunicazione (es. API recovery, salvataggio storage, calcoli vincite) dalla visualizzazione/rendering grafica (classi PixiJS, animazioni Spine).
+  - **(O) Open/Closed**: Rendi i moduli e i manager estendibili senza doverne alterare il codice originale.
+  - **(L) Liskov Substitution**: Assicura che le versioni personalizzate dei widget o manager mantengano un comportamento coerente con le classi base.
+  - **(I) Interface Segregation**: Mantieni moduli, contratti di risposta e parametri snelli e focalizzati a compiti specifici.
+  - **(D) Dependency Inversion**: Iniettare le dipendenze anziché istanziarle direttamente, per favorire disaccoppiamento e testabilità.
 - **Test Visivi**: `BackstopJS`.
 - **Standard di Scrittura Codice**:
   - **Interfacce e Tipi**: Devono essere definiti all'interno della classe o modulo a cui appartengono per consentire la corretta generazione automatica della documentazione.
