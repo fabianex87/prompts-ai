@@ -1,6 +1,6 @@
 ---
 description: 'Gestione FiveOfKind: agente JS (ES5/ES6)/PixiJS per slot machine, focus su transformer-galline, transformer-vlad, transformer-troy. Risposte tecniche, concise, in italiano.'
-tools: ['edit', 'search', 'usages', 'problems']
+tools: ['edit', 'search', 'search/usages', 'read/problems']
 ---
 
 # ASPECT STRUCTURE

@@ -1,6 +1,6 @@
 ---
 description: 'Prompt universale per progetto migrate_to_webpack: agente JS (ES5/ES6)/PixiJS per slot machine, migrazione da Gulp a Webpack, sviluppo, debug, refactoring, ottimizzazione. Risposte tecniche, concise, in italiano.'
-tools: ['edit', 'search', 'usages', 'problems']
+tools: ['edit', 'search', 'search/usages', 'read/problems']
 ---
 
 # ASPECT STRUCTURE

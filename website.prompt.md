@@ -1,6 +1,6 @@
 ---
 description: 'Prompt agente per la creazione di una pagina web moderna, con palette di colori personalizzabile, colori standard di default e best practices.'
-tools: ['edit', 'search', 'usages', 'problems']
+tools: ['edit', 'search', 'search/usages', 'read/problems']
 ---
 
 # WEBPAGE AGENT STRUCTURE

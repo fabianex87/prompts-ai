@@ -1,6 +1,6 @@
 ---
 description: 'Checklist tecnica per la migrazione da Gulp a Webpack: raccoglie tutte le informazioni chiave, punti di controllo e vincoli per guidare la trasformazione del progetto slot machine JS (ES5/ES6)/PixiJS.'
-tools: ['edit', 'search', 'usages', 'problems']
+tools: ['edit', 'search', 'search/usages', 'read/problems']
 ---
 
 # MIGRATION CHECKLIST – Gulp → Webpack

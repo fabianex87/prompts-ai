@@ -1,6 +1,6 @@
 ---
 description: 'Prompt universale per progetto transformer-galline, transformer-vlad, transformer-troy agente JS (ES5/ES6)/PixiJS per slot machine, sviluppo, debug, refactoring, ottimizzazione. Risposte tecniche, concise, in italiano.'
-tools: ['edit', 'search', 'usages', 'problems']
+tools: ['edit', 'search', 'search/usages', 'read/problems']
 ---
 
 # ASPECT STRUCTURE
