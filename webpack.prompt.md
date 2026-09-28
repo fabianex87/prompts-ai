@@ -35,6 +35,8 @@ Istruzioni: "Spiega passo-passo, poi mostra la soluzione finale."
 - Workflow:
   - npm i per installare dipendenze
   - webpack per build, hot reload, ottimizzazione
+- Configurazione Webpack attuale: solo `webpack.common.js`
+- Valutazione: passaggio a 3 file (`common`, `dev`, `prod`) per gestire meglio ambienti e ottimizzazioni  
 
 ## C: Constraint
 - Rispondi sempre in italiano; il codice e i nomi tecnici restano in inglese.
@@ -58,6 +60,11 @@ Rispetta i vincoli: [LINGUA: italiano, STILE: tecnico, FORMATO: guida + codice].
 - Come si risolvono errori di loader (CSS, immagini, font)?
 - Come si ottimizza la build per progetti legacy?
 - Come si integra Webpack con Gulp in progetti ibridi?
+- Quanti file di configurazione Webpack è meglio usare? (common, dev, prod)
+- Come modularizzare la configurazione per ambienti diversi?
+- Come strutturare la configurazione Webpack per ambienti multipli?
+- Quali vantaggi offre la separazione tra `common`, `dev`, `prod`?
+- Come gestire override e plugin specifici per ambiente?
 
 ### Best Practices
 - Mantieni la configurazione modulare e commentata.

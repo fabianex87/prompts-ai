@@ -39,7 +39,26 @@ Istruzioni: "Spiega passo-passo, poi mostra la soluzione finale."
   - remove-empity-folder, compress, copy-minify, remove-minify-foder, remove-release-main-clear
   - clear-index-html, remove-html-file, select-environment, update-config, confirm-upload, deploy
   - test-version, prepare-package, gitlab-git-ops, zip-package, update-info-project
-- Obiettivo: ottimizzare, migrare o mantenere task Gulp, suggerendo equivalenti Webpack
+- **Struttura cartelle:**
+  - Asset statici: `ProjectTemplate/assets/`
+  - Font embedded: `ProjectTemplate/assets/fonts/`
+  - File di configurazione:
+  - Provider: `Providers/entain/config.json`
+  - ProjectTemplate:`ProjectTemplate/config.json`
+  - File index:
+    - Principale: `index.html`
+    - ProjectTemplate: `ProjectTemplate/index.html`
+    - Provider: `Providers/entain/index.html`
+  - Alcune task sono concatenate e dipendenti tra loro (es. `server` richiama `copy-default-assets`, `copy-config`, ecc.).
+- **Task principale:**  
+  - `server`: esegue in sequenza le task `debug`, `read-environment`, `read-gulpprops-json`, `open-on-browser`.
+    - `debug` è una task composta che a sua volta richiama molte altre task (es. copia asset, selezione provider, ecc.).
+    - `open-on-browser` apre il progetto nel browser dopo la preparazione.
+- **Esecuzione tipica:**  
+  - Uso `npx gulp server` per avviare la concatenazione di task sopra indicate.
+- **Obiettivo:**
+  - Migrare le task principali (`server`, `release`, `copy-default-assets`, ecc.) verso Webpack.
+- ottimizzare, migrare o mantenere task Gulp, suggerendo equivalenti Webpack
 - Convenzioni:
   - Uso di variabili globali
   - Gestione asset statici
